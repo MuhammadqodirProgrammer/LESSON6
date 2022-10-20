@@ -1,1 +1,141 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1145px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero__info p {
+  max-width: 440px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.hero__info a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px 5px 5px 0;
+  background-color: rgb(49, 134, 190);
+  color: white;
+}
+.hero__info a:hover {
+  background: olivedrab;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .hero__container {
+    flex-direction: column;
+  }
+  .hero__img img {
+    width: 400px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .hero__container {
+    flex-direction: column-reverse;
+  }
+  .hero__img img {
+    max-width: 700px;
+  }
+}
+.div_footer {
+  padding-top: 400px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.round {
+  width: 100vh;
+  height: 100vh;
+  background-color: red;
+  -webkit-animation: oval2 0.5s ease-in infinite;
+          animation: oval2 0.5s ease-in infinite;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes oval {
+  from {
+    border-radius: 0;
+  }
+  to {
+    border-radius: 50%;
+  }
+}
+
+@keyframes oval {
+  from {
+    border-radius: 0;
+  }
+  to {
+    border-radius: 50%;
+  }
+}
+@-webkit-keyframes oval2 {
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: violet;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: coral;
+  }
+}
+@keyframes oval2 {
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: violet;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: coral;
+  }
+}
+.and_div {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.and_div button {
+  padding: 10px 30px;
+  color: #fff;
+  background-color: rgb(17, 73, 255);
+  border-radius: 5px 5px 5px 0;
+}
+
+.and_div a {
+  text-decoration: none;
+  border: 1px solid #fff;
+  font-size: 32px;
+  color: #fff;
+  background-color: orangered;
+  border-radius: 5px 5px 5px 0;
+  padding: 10px 30px;
+}/*# sourceMappingURL=main.css.map */
